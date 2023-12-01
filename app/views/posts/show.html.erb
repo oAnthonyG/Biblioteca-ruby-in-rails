@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+
+<div>
+  <%= link_to "Editar esse livro", edit_post_path(@post) %> |
+  <%= link_to "Voltar a estante", posts_path %>
+
+  <%= button_to "Deletar esse livro", @post, method: :delete %>
+</div>
